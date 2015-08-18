@@ -7,7 +7,7 @@
 
 ## What's an API?
 
-API stand for Application Programming Interface. It is a manner in which companies and organizations, like Twitter or the New York City government, expose their data and/or functionality to the public (i.e. talented programmers like yourself), for use. API's allow us to add important data and functionality to the applications we build. Here's just a few examples of some of the cool things you can do by using APIs: 
+An API, or application programming interface, is a manner in which companies and organizations, like Twitter or the New York City government, expose their data and/or functionality to the public (i.e. talented programmers like yourself) for use. APIs allow us to add important data and functionality to the applications we build. Here's just a few examples of some of the cool things you can do by using APIs: 
 
 * Create an app that allows users to sign up/sign in via Facebook/Google/Twitter/Github/etc. 
 * Use the NYC Open Data API to get and map data––everything from Health Department restaurant ratings to public park locations and hours to New York City Public Housing repair issues to noise complaints to public school construction, you name it!
