@@ -27,7 +27,7 @@ Many APIs are built on what is referred to as a REST-ful framework. We'll learn 
 
 ### Retrieving Data from an API
 
-For this walk-through, we'll be working with the NYC Open Data API. Let's say we've been hired by the city to create an app the will help parents sign their children up for after-school activities. In order to connect parents to after-school clubs around the city, we need a data set of such clubs. Luckily for us, the city has collected that information and allows the public to access it via their Open Data API. Let's check out the documentation for their [after-school club data set](https://data.cityofnewyork.us/resource/uvks-tn5n.json).
+For this walk-through, we'll be working with the NYC Open Data API. Let's say we've been hired by the city to create an app the will help parents sign their children up for after-school activities. In order to connect parents to after-school clubs around the city, we need a data set of such clubs. Luckily for us, the city has collected that information and allows the public to access it via their Open Data API. Let's check out the documentation for their [after-school club data set](http://dev.socrata.com/foundry/#/data.cityofnewyork.us/uvks-tn5n).
 
 #### Finding the API Endpoint
 
@@ -35,7 +35,8 @@ Take a few minutes and familiarize yourself with resource linked to above. Learn
 
 The documentation gives us the API endpoint that we are interested in. **Endpoint** refers to the URL that we are requesting that will return to us the desired data. 
 
-Open up a new tab in your browser and paste in the following URL: `https://data.cityofnewyork.us/resource/uvks-tn5n.json`
+Open up a new tab in your browser and paste in the following URL:
+`https://data.cityofnewyork.us/resource/uvks-tn5n.json`
 
 The page brings you to is the desired set of data! Notice that the data is laid out in what looks like a big nested hash. This is actually a [JSON](http://json.org/) object, which behaves just like a Ruby hash. Working with the JSON data returned to you by requests to an API is one of the reasons why we spent so much time in previous lessons learning how to manipulate and operate on nested hashes. 
 
