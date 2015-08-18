@@ -31,13 +31,13 @@ For this walk-through, we'll be working with the NYC Open Data API. Let's say we
 
 #### Finding the API Endpoint
 
-Take a few minutes and familiarize yourself with the above resource. Learning how to read API documentation is an important skill. It's okay if you don't understand everything in the above document. We'll learn much more about the web later on. For now, just look it over briefly. 
+Take a few minutes and familiarize yourself with resource linked to above. Learning how to read API documentation is an important skill. It's okay if you don't understand everything in the above document. We'll learn much more about the web later on. For now, just look it over briefly. 
 
 The documentation gives us the API endpoint that we are interested in. **Endpoint** refers to the URL that we are requesting that will return to us the desired data. 
 
 Open up a new tab in your browser and paste in the following URL: `https://data.cityofnewyork.us/resource/uvks-tn5n.json`
 
-The page is brings you to is the desired set of data! Notice that the data is laid out in what looks like a big nested hash. This is actually a [JSON](http://json.org/) object, which behaves just like a Ruby hash. Working with the JSON data returned to you by requests to an API is one of the reasons why we spent so much time in previous lessons learning how to manipulate and operate on nested hashes. 
+The page brings you to is the desired set of data! Notice that the data is laid out in what looks like a big nested hash. This is actually a [JSON](http://json.org/) object, which behaves just like a Ruby hash. Working with the JSON data returned to you by requests to an API is one of the reasons why we spent so much time in previous lessons learning how to manipulate and operate on nested hashes. 
 
 **Top Tip:** Once you find the right URL for retrieving your data, test it out directly in your browser *before* you try to request the data from inside your program. If pasting the URL into your browser brings you to the right data, you can move on. This cuts down on debugging time. This way, once you try to request the data from within your program, if it doesn't work, at least you'll know it's something wrong with your code, as opposed to something wrong with the API.
 
@@ -68,7 +68,9 @@ puts programs
 
 ```
 
-We stored our API endpoint URL in a constant at the top of our class. Then, we have a `get_programs` method that uses the NET::HTTP library to send an HTTP request from our program. NET::HTTP is a Ruby library that allows your program or application to send HTTP requests. We require it at the top of our file. We also require the URI library which helps Ruby to handle URIs. Don't worry too much about NET::HTTP and URI right now. We'll learn more about them later. For now, just focus on getting a basic understanding of and exposure to the tools we can use to request data from an API from an application. 
+We stored our API endpoint URL in a constant at the top of our class. Then, we have a `get_programs` method that uses the `NET::HTTP` library to send an HTTP request from our program. `NET::HTTP` is a Ruby library that allows your program or application to send HTTP requests. We require it at the top of our file with the `require` statement.  We also require the URI library which helps Ruby to handle URIs. Don't worry too much about NET::HTTP and URI right now. We'll learn more about them later. For now, just focus on getting a basic understanding of and exposure to the tools we can use to request data from an API from an application. 
+
+**A Note on Requirements:** We can use 'require' statements to include libraries of code in our own programs. We can require libraries like `NET::HTTP`, or we can require gems, like Pry. 
 
 Now, in your terminal in the directory of this lab, run `ruby nyc_api.rb`. It should output the JSON response from the NYC Open Data API!
 
