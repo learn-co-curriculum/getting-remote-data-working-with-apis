@@ -23,7 +23,7 @@ This is just a small sample of what working with APIs allows us to do as develop
 
 Different APIs expose their data and functionalities in different ways. However, there are commonalities among them and there are common approaches that we'll discuss here. Generally speaking, there are two main uses for APIs––getting data and adding functionality (i.e. signing in with Facebook or posting to Instagram). We'll be discussing the "getting data" part of working with APIs here. Later in this course, we'll learn more about the "adding functionality" aspect. 
 
-Many APIs are built on what is referred to as a REST-ful framework. We'll learn more about REST when we move into the web development portion of this course. For now, understand that it refers to a manner of architecting web applications. REST-ful design aims to deliver content to the user is a simple, logical, light-weight manner. In terms of an API, REST-ful design dictates the an API should have a set of URLs you can send an HTTP web request to. These URLs should allow you to request information, send information, update information and delete information. Let's focus on the "getting information" request. 
+Many APIs are built on what is referred to as a REST-ful framework. That mean that the "endpoints", or URLs to which we can send a request for data, follow certain conventions. These URLs should allow you to request information, send information, update information and delete information. Let's focus on the "getting information" request. 
 
 ### Retrieving Data from an API
 
