@@ -4,7 +4,7 @@ require 'net/http'
  
  class GetPrograms
 
-  URL = "https://data.cityofnewyork.us/resource/uvks-tn5n.json"
+  URL = "http://data.cityofnewyork.us/resource/uvks-tn5n.json"
 
   def get_programs
     uri = URI.parse(URL)
