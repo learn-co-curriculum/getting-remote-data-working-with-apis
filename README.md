@@ -36,7 +36,7 @@ Take a few minutes and familiarize yourself with resource linked to above. Learn
 The documentation gives us the API endpoint that we are interested in. **Endpoint** refers to the URL that we are requesting that will return to us the desired data. 
 
 Open up a new tab in your browser and paste in the following URL:
-`https://data.cityofnewyork.us/resource/uvks-tn5n.json`
+`http://data.cityofnewyork.us/resource/uvks-tn5n.json`
 
 The page brings you to is the desired set of data! Notice that the data is laid out in what looks like a big nested hash. This is actually a [JSON](http://json.org/) object, which behaves just like a Ruby hash. Working with the JSON data returned to you by requests to an API is one of the reasons why we spent so much time in previous lessons learning how to manipulate and operate on nested hashes. 
 
@@ -54,7 +54,7 @@ require 'open-uri'
 
 class GetPrograms
 
-  URL = "https://data.cityofnewyork.us/resource/uvks-tn5n.json"
+  URL = "http://data.cityofnewyork.us/resource/uvks-tn5n.json"
 
   def get_programs
     uri = URI.parse(URL)
