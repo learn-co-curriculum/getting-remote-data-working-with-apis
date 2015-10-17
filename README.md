@@ -44,7 +44,7 @@ The page brings you to is the desired set of data! Notice that the data is laid 
 
 #### Sending a request to and API from a program or application
 
-Now that we understand what an API is and have even dealt with a URL that takes us to a real API endpoint, let's use that same URL to send a request for data from a Ruby program. 
+Now that we understand what an API is and have even dealt with a URL that takes us to a real API endpoint, let's use that same URL to send a request for data from a Ruby program. Fork and clone this repo locally. 
 
 Open up `nyc_api.rb`. Let's take a look at the code here: 
 
