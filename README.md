@@ -132,7 +132,7 @@ So far we've used the NET::HTTP and URI to send a request for data to an API end
 
 ### Using Gems to Work with APIs
 
-Many popular APIs have wrappers, i.e. gems at are code libraries that do a lot of the heavy lifting for you. In fact, we'll use a gem to interact with the Twitter API in the next lab. 
+Many popular APIs have wrappers, i.e. gems that are code libraries that do a lot of the heavy lifting for you. In fact, we'll use a gem to interact with the Twitter API in the next lab. 
 
 
 
