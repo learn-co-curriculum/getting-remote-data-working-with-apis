@@ -38,7 +38,7 @@ The documentation gives us the API endpoint that we are interested in. **Endpoin
 Open up a new tab in your browser and paste in the following URL:
 `http://data.cityofnewyork.us/resource/uvks-tn5n.json`
 
-The page brings you to is the desired set of data! Notice that the data is laid out in what looks like a big nested hash. This is actually a [JSON](http://json.org/) object, which behaves just like a Ruby hash. Working with the JSON data returned to you by requests to an API is one of the reasons why we spent so much time in previous lessons learning how to manipulate and operate on nested hashes. 
+The page brings you to is the desired set of data! Notice that the data is laid out in what looks like a big array of nested hashes. This is actually a [JSON](http://json.org/) object, which behaves just like a Ruby hash. Working with the JSON data returned to you by requests to an API is one of the reasons why we spent so much time in previous lessons learning how to manipulate and operate on nested hashes. 
 
 **Top Tip:** Once you find the right URL for retrieving your data, test it out directly in your browser *before* you try to request the data from inside your program. If pasting the URL into your browser brings you to the right data, you can move on. This cuts down on debugging time. This way, once you try to request the data from within your program, if it doesn't work, at least you'll know it's something wrong with your code, as opposed to something wrong with the API.
 
