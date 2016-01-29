@@ -146,4 +146,4 @@ Many popular APIs have wrappers, i.e. gems that are code libraries that do a lot
 
 
 
-<a href='https://learn.co/lessons/code-along-working-with-apis' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/code-along-working-with-apis' title='Code Along: Intro to Working with APIs'>Code Along: Intro to Working with APIs</a> on Learn.co and start learning to code for free.</p>
