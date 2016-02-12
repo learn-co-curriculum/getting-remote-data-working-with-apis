@@ -51,6 +51,7 @@ Open up `nyc_api.rb`. Let's take a look at the code here:
 ```ruby
 require 'net/http'
 require 'open-uri'
+require 'json'
 
 class GetPrograms
 
@@ -82,7 +83,7 @@ Now that we have all of our data back from the API, we need to be able to collec
 * Copy and paste the following code into our GetPrograms class:
 
 ```ruby
-def program_names
+def program_school
   # we use the JSON library to parse the API response into nicely formatted JSON
     programs = JSON.parse(self.get_programs)
     programs.each do |program|
