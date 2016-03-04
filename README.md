@@ -86,7 +86,7 @@ Now that we have all of our data back from the API, we need to be able to collec
 def program_school
   # we use the JSON library to parse the API response into nicely formatted JSON
     programs = JSON.parse(self.get_programs)
-    programs.each do |program|
+    programs.collect do |program|
       program["agency"]
     end
   end
@@ -148,3 +148,5 @@ Many popular APIs have wrappers, i.e. gems that are code libraries that do a lot
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/code-along-working-with-apis' title='Code Along: Intro to Working with APIs'>Code Along: Intro to Working with APIs</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/code-along-working-with-apis'>Code Along: Working with APIs</a> on Learn.co and start learning to code for free.</p>
