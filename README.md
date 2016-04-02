@@ -42,7 +42,7 @@ The page brings you to is the desired set of data! Notice that the data is laid 
 
 **Top Tip:** Once you find the right URL for retrieving your data, test it out directly in your browser *before* you try to request the data from inside your program. If pasting the URL into your browser brings you to the right data, you can move on. This cuts down on debugging time. This way, once you try to request the data from within your program, if it doesn't work, at least you'll know it's something wrong with your code, as opposed to something wrong with the API.
 
-#### Sending a request to and API from a program or application
+#### Sending a request to an API from a program or application
 
 Now that we understand what an API is and have even dealt with a URL that takes us to a real API endpoint, let's use that same URL to send a request for data from a Ruby program. Fork and clone this repo locally. 
 
