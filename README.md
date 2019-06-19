@@ -27,7 +27,7 @@ Many APIs are built on what is referred to as a REST-ful framework. That mean th
 
 ### Retrieving Data from an API
 
-For this walk-through, we'll be working with the NYC Open Data API. Let's say we've been hired by the city to create an app that will help parents sign their children up for after-school activities. In order to connect parents to after-school clubs around the city, we need a data set of such clubs. Luckily for us, the city has collected that information and allows the public to access it via their Open Data API. Let's check out the documentation for their [after-school club data set](http://dev.socrata.com/foundry/#/data.cityofnewyork.us/uvks-tn5n).
+For this walk-through, we'll be working with the NYC Open Data API. Let's say we've been hired by the city to create an app that will help parents sign their children up for after-school activities. In order to connect parents to after-school clubs around the city, we need a data set of such clubs. Luckily for us, the city has collected that information and allows the public to access it via their Open Data API. Let's check out the documentation for their [after-school club data set](https://dev.socrata.com/foundry/data.cityofnewyork.us/szgz-awuh).
 
 #### Finding the API Endpoint
 
@@ -135,20 +135,4 @@ So far we've used the NET::HTTP and URI to send a request for data to an API end
 
 Many popular APIs have wrappers, i.e. gems that are code libraries that do a lot of the heavy lifting for you. In fact, we'll use a gem to interact with the Twitter API in the next lab. 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/code-along-working-with-apis' title='Code Along: Intro to Working with APIs'>Code Along: Intro to Working with APIs</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/code-along-working-with-apis'>Code Along: Working with APIs</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/code-along-working-with-apis'>Code Along Working With APIs</a> on Learn.co and start learning to code for free.</p>
