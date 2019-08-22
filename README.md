@@ -245,24 +245,6 @@ custom `program_school` method with a general `parse_json` method, as well.
 Instead of a specific class, we would instead have a class that retrieves
 JSON from any provided URL!
 
-```ruby
-class GetJSON
-  def initialize(url)
-    @url = url
-  end
-
-  def get_response_body
-    uri = URI.parse(@url)
-    response = Net::HTTP.get_response(uri)
-    response.body
-  end
-
-  def parse_json
-    JSON.parse(get_response_body)
-  end
-end
-```
-
 ## Resources
 
 * [NET::HTTP][`net/http`]
