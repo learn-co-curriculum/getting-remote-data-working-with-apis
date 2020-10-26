@@ -253,4 +253,4 @@ JSON from any provided URL!
 [`net/http`]: https://ruby-doc.org/stdlib-2.6.3/libdoc/net/http/rdoc/Net/HTTP.html
 [`open-uri`]: https://ruby-doc.org/stdlib-2.6.3/libdoc/open-uri/rdoc/OpenURI.html
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/code-along-working-with-apis' title='Code Along: Intro to Working with APIs'>Code Along: Intro to Working with APIs</a> on Learn.co and start learning to code for free.</p>
+
