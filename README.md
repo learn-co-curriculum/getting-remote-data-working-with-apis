@@ -94,7 +94,7 @@ Now that we understand what an API is and have even dealt with a URL that takes
 us to a real API endpoint, let's use that same URL to send a request for data
 from a Ruby program. Fork and clone this repo locally.
 
-Open up `nyc_api.rb`. Let's take a look at the code here:
+Open up `lib/nyc_api.rb`. Let's take a look at the code here:
 
 ```ruby
 require 'net/http'
@@ -135,7 +135,7 @@ data from an API from an application.
 of code in our own programs. We can require libraries like `NET::HTTP`, or we
 can require gems, like Pry.
 
-Now, in your terminal in the directory of this lab, run `ruby nyc_api.rb`. It
+Now, in your terminal in the directory of this lab, run `ruby lib/nyc_api.rb`. It
 should output the JSON response from the NYC Open Data API!
 
 ### Working with API Data
@@ -173,7 +173,7 @@ programs = GetPrograms.new
 puts programs.program_school.uniq
 ```
 
-Now, run the program with `ruby nyc_api.rb` in your terminal. You should
+Now, run the program with `ruby lib/nyc_api.rb` in your terminal. You should
 something like this:
 
 ```bash
