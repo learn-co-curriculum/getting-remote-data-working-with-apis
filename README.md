@@ -1,4 +1,4 @@
-# Code-Along: Intro to Working with APIs
+# Working with APIs
 
 ## Objectives
 
