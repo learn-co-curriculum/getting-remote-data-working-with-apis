@@ -64,12 +64,12 @@ Open Data API. Let's check out the documentation for their
 
 Take a few minutes and familiarize yourself with resource linked to above.
 Learning how to read API documentation is an important skill. It's okay if you
-don't understand everything in the above document. We'll learn much more about
-the web later on. For now, just look it over briefly.
+don't understand everything in the above document. For now, just look it over
+briefly.
 
-The documentation gives us the API endpoint that we are interested in.
-**Endpoint** refers to the URL that we are requesting that will return to us the
-desired data.
+As you read through, you'll see that the documentation lists the API endpoint.
+**Endpoint** refers to the URL we can submit a request to and that will return
+to us the desired data.
 
 Open up a new tab in your browser and paste in the following URL:
 `http://data.cityofnewyork.us/resource/uvks-tn5n.json`
@@ -128,8 +128,8 @@ handle URIs.
 Both [NET::HTTP][`net/http`] and [URI][`open-uri`] are classes built into Ruby.
 Check out the links at the bottom of this lesson to read more about their usage.
 Don't worry too much about NET::HTTP and URI right now, though. Just focus on
-getting a basic understanding of and exposure to the tools we can use to request
-data from an API from an application.
+getting a basic understanding of and exposure to the tools we can use inside our
+applications to request data from an API.
 
 **A Note on Requirements:** We can use `require` statements to include libraries
 of code in our own programs. We can require libraries like `NET::HTTP`, or we
@@ -174,27 +174,27 @@ puts programs.program_school.uniq
 ```
 
 Now, run the program with `ruby lib/nyc_api.rb` in your terminal. You should
-something like this:
+see something like this:
 
 ```bash
-Baychester Youth Council
-Bronx Arts Ensemble
-Bronx River Art Center, Inc.
-Casita Maria, Inc.
-Childrens Arts & Science Workshops, Inc.
+Rockaway Artist Alliance, Inc.
+CAMBA  
+Sports and Arts In Schools Foundation, Inc.
+New York Junior Tennis League
+Arthur Ashe Institute for Urban Health, Inc
 Citizens Advice Bureau, Inc.
-Claremont Neighborhood Centers, Inc.
-Community Association of Progressive Dominicans
-Directions For Our Youth, Inc.
-East Side House, Inc.
-Episcopal Social Services
-Federation Employment & Guidance Services (FEGS)
-Good Shepherd Services
-Inwood House
-Just Us, Inc.
+United Activities Unlimited, Inc.
 Kips Bay Boys & Girls Club
-Latino Pastoral Action Center, Inc.
-Learning Thru An Expanded Arts Program, Inc
+National Society For Hebrew Day Schools
+School Settlement
+The Door - A Center of Alternatives
+Community Counseling and Mediation
+Dream Yard Project, Inc.
+The Childrens Aid Society
+Just Us, Inc.
+Bushwick Community Action Association, Inc.
+Greater Ridgewood Youth Council, Inc.
+Brooklyn Bureau of Community Services
 ...
 ```
 
@@ -221,11 +221,11 @@ a hash we can work with and extract data from.
 
 In our example, we were able to retrieve remote information from an API using
 the built-in Ruby classes `NET::HTTP` and `URI`. By putting this implementation
-inside a class, we can develop highly reuseable code that let's us access all
+inside a class, we can develop highly reuseable code that lets us access all
 sorts of information remotely.
 
-The `GetPrograms` class used a hard-coded the URL, stored as a class constant,
-and included an instance method called `get_programs`:
+The `GetPrograms` class used a hard-coded URL, stored as a class constant, and
+included an instance method called `get_programs`:
 
 ```ruby
 URL = "http://data.cityofnewyork.us/resource/uvks-tn5n.json"
@@ -239,7 +239,7 @@ end
 
 But we could easily adapt this code to be flexible and accept _any_ URL we pass
 in using an `initialize` method and an instance variable. The `get_programs`
-method is really just getting the response body of from the requested URL, so we
+method is really just getting the response body from the requested URL, so we
 could name this `get_response_body` to be more accurate. We could replace the
 custom `program_school` method with a general `parse_json` method, as well.
 Instead of a specific class, we would instead have a class that retrieves
@@ -252,5 +252,3 @@ JSON from any provided URL!
 
 [`net/http`]: https://ruby-doc.org/stdlib-2.6.3/libdoc/net/http/rdoc/Net/HTTP.html
 [`open-uri`]: https://ruby-doc.org/stdlib-2.6.3/libdoc/open-uri/rdoc/OpenURI.html
-
-
