@@ -92,7 +92,9 @@ something wrong with your code, as opposed to something wrong with the API.
 
 Now that we understand what an API is and have even dealt with a URL that takes
 us to a real API endpoint, let's use that same URL to send a request for data
-from a Ruby program. Fork and clone this repo locally.
+from a Ruby program. Fork and clone this repo locally. You can fork the repo by 
+clicking the GitHub button to open it in GitHub, then clicking the Fork button 
+in the upper right corner of the page.
 
 Open up `lib/nyc_api.rb`. Let's take a look at the code here:
 
