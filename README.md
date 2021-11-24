@@ -75,8 +75,8 @@ to us the desired data.
 Open up a new tab in your browser and paste in the following URL:
 `http://data.cityofnewyork.us/resource/uvks-tn5n.json`
 
-The page brings you to is the desired set of data! Notice that the data is laid
-out in what looks like a big array of nested hashes. This is actually a
+The page brings you to the desired set of data! Notice that the data is laid out
+in what looks like a big array of nested hashes. This is actually a
 [JSON](http://json.org/) object, which behaves just like a Ruby hash. Working
 with the JSON data returned to you by requests to an API is one of the reasons
 why we spent so much time in previous lessons learning how to manipulate and
