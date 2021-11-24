@@ -55,10 +55,11 @@ we've been hired by the city to create an app that will help parents sign their
 children up for after-school activities. To connect parents to after-school
 clubs around the city, we need a data set of such clubs. Luckily for us, the
 city has collected that information and allows the public to access it via their
-Open Data API. Let's check out the documentation for their
-[after-school club data set][].
+Open Data API. Let's check out the documentation for their [after-school club
+data set][].
 
-[after-school club data set]: https://dev.socrata.com/foundry/data.cityofnewyork.us/szgz-awuh
+[after-school club data set]:
+  https://dev.socrata.com/foundry/data.cityofnewyork.us/szgz-awuh
 
 #### Finding the API Endpoint
 
@@ -104,20 +105,17 @@ require 'open-uri'
 require 'json'
 
 class GetPrograms
-
-  URL = "http://data.cityofnewyork.us/resource/uvks-tn5n.json"
+  URL = 'http://data.cityofnewyork.us/resource/uvks-tn5n.json'
 
   def get_programs
     uri = URI.parse(URL)
     response = Net::HTTP.get_response(uri)
     response.body
   end
-
 end
 
 programs = GetPrograms.new.get_programs
 puts programs
-
 ```
 
 We stored our API endpoint URL in a constant at the top of our class. Then, we
@@ -137,8 +135,8 @@ applications to request data from an API.
 of code in our own programs. We can require libraries like `NET::HTTP`, or we
 can require gems, like Pry.
 
-Now, in your terminal in the directory of this lab, run `ruby lib/nyc_api.rb`. It
-should output the JSON response from the NYC Open Data API!
+Now, in your terminal in the directory of this lab, run `ruby lib/nyc_api.rb`.
+It should output the JSON response from the NYC Open Data API!
 
 ### Working with API Data
 
@@ -152,11 +150,9 @@ Copy and paste the following code into our GetPrograms class:
 
 ```ruby
 def program_school
-# we use the JSON library to parse the API response into nicely formatted JSON
+  # we use the JSON library to parse the API response into nicely formatted JSON
   programs = JSON.parse(self.get_programs)
-  programs.collect do |program|
-    program["agency"]
-  end
+  programs.collect { |program| program['agency'] }
 end
 ```
 
@@ -175,8 +171,8 @@ programs = GetPrograms.new
 puts programs.program_school.uniq
 ```
 
-Now, run the program with `ruby lib/nyc_api.rb` in your terminal. You should
-see something like this:
+Now, run the program with `ruby lib/nyc_api.rb` in your terminal. You should see
+something like this:
 
 ```txt
 Rockaway Artist Alliance, Inc.
@@ -218,8 +214,8 @@ To recap: APIs generally either provide a user with data or added functionality.
 We can use APIs that serve data to get information for our own applications and
 projects. To get this data, we need to send a request to the URL of the API and
 know how to work with the response we receive. Many APIs serve data in JSON
-format, which needs to be parsed before we can use it. Once parsed, it becomes
-a hash we can work with and extract data from.
+format, which needs to be parsed before we can use it. Once parsed, it becomes a
+hash we can work with and extract data from.
 
 In our example, we were able to retrieve remote information from an API using
 the built-in Ruby classes `NET::HTTP` and `URI`. By putting this implementation
@@ -230,7 +226,7 @@ The `GetPrograms` class used a hard-coded URL, stored as a class constant, and
 included an instance method called `get_programs`:
 
 ```ruby
-URL = "http://data.cityofnewyork.us/resource/uvks-tn5n.json"
+URL = 'http://data.cityofnewyork.us/resource/uvks-tn5n.json'
 
 def get_programs
   uri = URI.parse(URL)
@@ -244,13 +240,15 @@ in using an `initialize` method and an instance variable. The `get_programs`
 method is really just getting the response body from the requested URL, so we
 could name this `get_response_body` to be more accurate. We could replace the
 custom `program_school` method with a general `parse_json` method, as well.
-Instead of a specific class, we would instead have a class that retrieves
-JSON from any provided URL!
+Instead of a specific class, we would instead have a class that retrieves JSON
+from any provided URL!
 
 ## Resources
 
 - [NET::HTTP][`net/http`]
 - [Open URI][`open-uri`]
 
-[`net/http`]: https://ruby-doc.org/stdlib-2.6.3/libdoc/net/http/rdoc/Net/HTTP.html
-[`open-uri`]: https://ruby-doc.org/stdlib-2.6.3/libdoc/open-uri/rdoc/OpenURI.html
+[`net/http`]:
+  https://ruby-doc.org/stdlib-2.6.3/libdoc/net/http/rdoc/Net/HTTP.html
+[`open-uri`]:
+  https://ruby-doc.org/stdlib-2.6.3/libdoc/open-uri/rdoc/OpenURI.html
